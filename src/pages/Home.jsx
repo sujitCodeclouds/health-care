@@ -41,7 +41,7 @@ function Home() {
                   </a>
                 </div>
               </Col>
-              <Col xs={12} md={5}>
+              <Col xs={12} md={5} className="pt-4 pt-md-0">
                 <div className="hero-image">
                   <img
                     src={heroimage}
@@ -76,7 +76,7 @@ function Home() {
               sm={2}
               md={2}
               lg={3}
-              className="g-5 p-60 position-relative"
+              className="g-4 g-md-5 p-60 position-relative"
             >
               <Col>
                 <ServiceCard
@@ -141,9 +141,9 @@ function Home() {
                 />
               </div>
             </Row>
-            <Row className="mt-2">
-              <Col className="text-center">
-                <Link to="#!" className="btn btn-primary">
+            <Row className="mt-5 mt-md-2">
+              <Col className="text-left text-md-center">
+                <Link to="/services" className="btn btn-primary">
                   Learn More
                 </Link>
               </Col>
@@ -154,7 +154,7 @@ function Home() {
           <Container>
             <Row className="align-items-center flex-wrap pb-5">
               <Col xs={12} md={6} lg={6}>
-                <div className="features-image text-center text-md-start">
+                <div className="features-image text-center text-md-start mb-4 mb-md-0">
                   <img
                     src={leadingHealthcare}
                     alt="leading healthcare providers"
@@ -167,7 +167,7 @@ function Home() {
               <Col xs={12} md={6} lg={6}>
                 <div className="features-text ps-0 ps-md-5">
                   <h2>Leading healthcare providers</h2>
-                  <p className="mb-2 mb-sm-4">
+                  <p className="mb-2 mb-lg-4">
                     Trafalgar provides progressive, reliable, and affordable
                     healthcare services designed for everyone. Our platform
                     makes it easy to access quality medical care through mobile
@@ -182,7 +182,7 @@ function Home() {
             </Row>
             <Row className="align-items-center flex-row-reverse flex-wrap pt-5">
               <Col xs={12} md={6} lg={6}>
-                <div className="features-image text-center text-md-start">
+                <div className="features-image text-center text-md-start mb-4 mb-md-0">
                   <img
                     src={truestedPartners}
                     alt="Your trusted partner in better living"
@@ -193,7 +193,7 @@ function Home() {
                 </div>
               </Col>
               <Col xs={12} md={6} lg={6}>
-                <div className="features-text pe-0 pe-md-5">
+                <div className="features-text pe-0 pe-lg-5">
                   <h2>Your trusted partner in better living</h2>
                   <p className="mb-4">
                     Trafalgar provides progressive, reliable, and affordable
@@ -221,7 +221,7 @@ function Home() {
         <section className="testimonial-section">
           <Container>
             <Row>
-              <Col md={{ span: 10, offset: 1 }}>
+              <Col xl={{ span: 10, offset: 1 }}>
                 <div className="testimonial-box">
                   <h2>What our customers are saying</h2>
                   <TestimonialSlider testimonials={testimonialData} />
@@ -238,11 +238,11 @@ function Home() {
               </Col>
             </Row>
 
-            <BlogCards />
+            <BlogCards limit={3} />
 
             <Row className="mt-2 mt-md-5">
-              <Col className="text-center">
-                <Link to="#!" className="btn btn-primary">
+              <Col className="text-left text-md-center">
+                <Link to="/blogs" className="btn btn-primary">
                   View All
                 </Link>
               </Col>

@@ -5,6 +5,14 @@ import Col from "react-bootstrap/Col";
 import footerlogo from "../assets/images/footer logo.svg";
 import footershape from "../assets/images/footer-shape-1.svg";
 import { Link } from "react-router-dom";
+import {
+  FaFacebook,
+  FaFacebookSquare,
+  FaLinkedin,
+  FaPinterestSquare,
+  FaTwitterSquare,
+  FaYoutubeSquare,
+} from "react-icons/fa";
 function Footer() {
   return (
     <>
@@ -26,6 +34,21 @@ function Footer() {
                   accessible on mobile and online for everyone.
                 </p>
               </div>
+              <div className="footer-social-links">
+                <Link to="#!" aria-label="Facebook">
+                  <FaFacebookSquare size={26} color="#fff" />
+                </Link>
+                <Link to="#!" aria-label="LinkedIn">
+                  <FaLinkedin size={26} color="#fff" />
+                </Link>
+
+                <Link to="#!" aria-label="Youtube">
+                  <FaYoutubeSquare size={26} color="#fff" />
+                </Link>
+                <Link to="#!" aria-label="Pinterest">
+                  <FaPinterestSquare size={26} color="#fff" />
+                </Link>
+              </div>
             </Col>
             <Col xs={12} md={{ span: 7, offset: 1 }}>
               <Row>
@@ -33,13 +56,16 @@ function Footer() {
                   <h4>Company</h4>
                   <ul className="footer-links">
                     <li>
-                      <Link to="/">About</Link>
+                      <Link to="/about">About</Link>
                     </li>
                     <li>
-                      <Link to="/">Testimonials</Link>
+                      <Link to="/services">Services</Link>
                     </li>
                     <li>
-                      <Link to="/">Contact Us</Link>
+                      <Link to="/blogs">Blogs</Link>
+                    </li>
+                    <li>
+                      <Link to="/contact">Contact Us</Link>
                     </li>
                   </ul>
                 </Col>
@@ -64,7 +90,7 @@ function Footer() {
                       <Link to="/">Help center</Link>
                     </li>
                     <li>
-                      <Link to="/">Contact support</Link>
+                      <Link to="/contact-data">Contact Data</Link>
                     </li>
                     <li>
                       <Link to="/">Instructions</Link>
