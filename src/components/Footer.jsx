@@ -6,11 +6,9 @@ import footerlogo from "../assets/images/footer logo.svg";
 import footershape from "../assets/images/footer-shape-1.svg";
 import { Link } from "react-router-dom";
 import {
-  FaFacebook,
   FaFacebookSquare,
   FaLinkedin,
   FaPinterestSquare,
-  FaTwitterSquare,
   FaYoutubeSquare,
 } from "react-icons/fa";
 function Footer() {

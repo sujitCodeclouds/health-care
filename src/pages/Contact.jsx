@@ -2,13 +2,8 @@ import React from "react";
 import Layout from "../components/Layout";
 import InnerBanner from "../components/InnerBanner";
 import { Col, Container, Row } from "react-bootstrap";
-import {
-  FaArrowRight,
-  FaEnvelope,
-  FaMapMarked,
-  FaMobile,
-} from "react-icons/fa";
-import { FaArrowLeft, FaLocationDot, FaLocationPin } from "react-icons/fa6";
+import { FaArrowRight, FaEnvelope, FaMobile } from "react-icons/fa";
+import { FaLocationDot } from "react-icons/fa6";
 import ContactForm from "../components/ContactForm";
 
 function Contact() {

@@ -5,7 +5,7 @@ import blogData from "../services/blogData";
 import Layout from "./Layout";
 import RecentPosts from "./RecentPosts";
 import InnerBanner from "./InnerBanner";
-import { FaCalendar, FaClock, FaUser, FaUserAlt } from "react-icons/fa";
+import { FaClock, FaUserAlt } from "react-icons/fa";
 
 const BlogSingle = () => {
   const { slug } = useParams();
