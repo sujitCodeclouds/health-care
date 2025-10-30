@@ -36,9 +36,9 @@ function Home() {
                     Receive expert medical advice, consultations, and
                     personalized care—all from the comfort of your home.
                   </p>
-                  <a href="#services" className="btn btn-secondary">
+                  <Link to="/contact" className="btn btn-secondary">
                     Consult today
-                  </a>
+                  </Link>
                 </div>
               </Col>
               <Col xs={12} md={5} className="pt-4 pt-md-0">
